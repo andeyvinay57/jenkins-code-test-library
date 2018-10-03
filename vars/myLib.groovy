@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-def call() {
+def call(String name = 'human') {
   //archiving the file.  Files will be present at /var/lib/jenkins/jobs/apple_coding/builds/<buildnumber>/archive/
     echo "archive"
     archiveArtifacts '*.txt'
